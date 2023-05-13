@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    background: rgb(85, 85, 246);
+    font-family: cursive;
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+}
+
+.imagem {
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); /* 0 0 0 tamanho da sombra*/
+    display: flex;
+}
+
+.imagem span {
+    margin: auto;
+    font-size: 1em;
+}
+
+/*forma de animar animacoes */ @keyframes rotate360 { 
+ from{
+    transform: rotateY (0deg);
+ }
+
+ to {
+    transform: rotateY(-360deg);
+ }
+} /* faz ele girar */
+
+.imagem:nth-child(1) {
+    background-image: url(https://www.stockvault.net/data/2008/09/28/106338/preview16.jpg);
+
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2) {
+    background-image: url(https://www.stockvault.net/data/2012/01/30/128974/preview16.jpg);
+
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3) {
+    background-image: url(https://www.stockvault.net/data/2007/07/19/103545/preview16.jpg);
+
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4) {
+    background-image: url(https://www.stockvault.net/data/2007/03/01/98221/preview16.jpg);
+
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5) {
+    background-image: url(https://image.shutterstock.com/mosaic_250/164485478/1907059369/stock-photo-young-gamer-playing-online-video-games-while-streaming-on-social-media-youth-people-addicted-to-1907059369.jpg);
+
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+
+.imagem:nth-child(6) {
+    background-image: url(https://image.shutterstock.com/mosaic_250/169538976/1487069789/stock-photo-gamer-work-space-concept-top-view-a-gaming-gear-mouse-keyboard-joystick-headset-mobile-1487069789.jpg);
+
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7) {
+    background-image: url(https://image.shutterstock.com/mosaic_250/1113296/2177467491/stock-photo-over-shoulder-view-of-african-american-gamer-girl-playing-online-games-using-gaming-pc-setup-2177467491.jpg);
+
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8) {
+    background-image: url(https://image.shutterstock.com/mosaic_250/273481/537529714/stock-photo-gaming-game-play-tv-fun-gamer-gamepad-guy-controller-video-console-playing-player-holding-hobby-537529714.jpg);
+
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9) {
+    background-image: url(https://image.shutterstock.com/mosaic_250/178456/1430140070/stock-photo-powerful-personal-computer-gamer-rig-with-first-person-shooter-game-on-screen-monitor-stands-on-1430140070.jpg);
+
+    transform: rotateY(320deg) translateZ(430px);
+}
